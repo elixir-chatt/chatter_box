@@ -22,7 +22,7 @@ defmodule ChatterBoxTest do
   end
 
   test "shouting at Trump" do
-    assert Bot.say(:trump, "WHY ARE YOU PRESIDENT") == "Ex-cuuuuse me... You know what... You're Fired."
+    assert Bot.say(:trump, "WHY DID THAT HAPPEN") == "Ex-cuuuuse me... You know what... You're Fired."
   end
 
 end

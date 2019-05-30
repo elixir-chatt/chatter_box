@@ -5,6 +5,7 @@ defmodule ChatterBox.Character do
         angry_mom: ChatterBox.AngryMom, 
         magic8ball: ChatterBox.Magic8Ball,
         trump: ChatterBox.Trump, 
+        dragon: ChatterBox.Dragon,
     }
   end
 

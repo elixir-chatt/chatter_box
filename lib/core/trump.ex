@@ -18,9 +18,9 @@ defmodule ChatterBox.Trump do
   def say( %{quiet: true}) do
     "So anyway... I was telling Ivanka the other day..."
   end
-  
-  def say( %{}) do 
+
+  def say( %{}) do
     "Fake News..."
   end
-   
+
 end

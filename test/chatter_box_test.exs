@@ -18,7 +18,7 @@ defmodule ChatterBoxTest do
   end
 
   test "test to_rules" do
-    assert Rules.to_rules("Hello!") == %{excited: true, shouting: false, quiet: false, question: false, boring: false,}
+    assert Rules.to_rules("Hello") == %{excited: false, shouting: false, quiet: false, question: false, boring: false,}
   end
 
   test "asking Trump a question" do
@@ -31,6 +31,9 @@ defmodule ChatterBoxTest do
 
   test "testing the quiet function in professor" do
     assert Bot.say(:professor, "hi professor") == "Speak up!"
+  end
+  test "Testing default professor" do
+    assert Bot.say(:professor, "Hello") == "What was that?"
   end
 
 end

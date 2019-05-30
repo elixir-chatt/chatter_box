@@ -22,5 +22,9 @@ defmodule ChatterBox.Professor do
   def say(%{question: true}) do
     "Did you read the book?"
   end
-  
+
+  def say(%{}) do
+    "What was that?"
+  end
+
 end

@@ -22,11 +22,7 @@ defmodule ChatterBox.Rules do
   end
 
   def question?(sentence) do
-    if String.ends_with?(sentence, "?") do
-        true
-    else
-        false
-    end
+    String.ends_with?(sentence, "?")
   end
 
   def boring?(sentence) do

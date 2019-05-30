@@ -17,12 +17,20 @@ defmodule ChatterBoxTest do
     refute Rules.boring?("WOAH!")
   end
 
+  test "test to_rules" do
+    assert Rules.to_rules("Hello!") == %{excited: true, shouting: false, quiet: false, question: false, boring: false,}
+  end
+
   test "asking Trump a question" do
     assert Bot.say(:trump, "What are you doing?") == "Trust me... It'll be HUUUUUGE."
   end
 
   test "shouting at Trump" do
     assert Bot.say(:trump, "WHY DID THAT HAPPEN") == "Ex-cuuuuse me... You know what... You're Fired."
+  end
+
+  test "testing the quiet function in professor" do
+    assert Bot.say(:professor, "hi professor") == "Speak up!"
   end
 
 end

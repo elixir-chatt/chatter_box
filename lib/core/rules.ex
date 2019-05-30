@@ -1,11 +1,11 @@
 defmodule ChatterBox.Rules do
   def to_rules(sentence) do
     %{
-      boring: boring?(sentence),
+      boring:   boring?(sentence),
+      excited:  excited?(sentence),
+      question: question?(sentence),
       shouting: shouting?(sentence),
-      quiet: quiet?(sentence),
-      excited: excited?(sentence),
-      question: question?(sentence)
+      quiet:    quiet?(sentence),
     }
   end
 

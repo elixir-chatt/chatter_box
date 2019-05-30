@@ -1,10 +1,11 @@
-defmodule ChatterBox.Character do 
+defmodule ChatterBox.Character do
 
   def personalities() do
     %{
-        angry_mom: ChatterBox.AngryMom, 
+        angry_mom: ChatterBox.AngryMom,
         magic8ball: ChatterBox.Magic8Ball,
-        trump: ChatterBox.Trump, 
+        trump: ChatterBox.Trump,
+        professor: ChatterBox.Professor,
     }
   end
 

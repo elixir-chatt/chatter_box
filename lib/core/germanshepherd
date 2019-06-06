@@ -1,0 +1,15 @@
+defmodule ChatterBox.GermanShepherd do
+
+def say(%{excited: true}) do
+  "*jump*"
+end
+
+def say(%{quiet: true}) do
+  "BARK BARK BARK!"
+end
+
+def say(%{shouting: true}) do
+  "*hides*"
+end
+
+end

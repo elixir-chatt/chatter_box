@@ -4,9 +4,10 @@ defmodule ChatterBox.Character do
     %{
       angry_mom: ChatterBox.AngryMom,
       magic8ball: ChatterBox.Magic8Ball,
-      trump: ChatterBox.Trump, 
+      trump: ChatterBox.Trump,
       dragon: ChatterBox.Dragon,
       professor: ChatterBox.Professor,
+      germanshepherd: ChatterBox.GermanShepherd,
     }
   end
 

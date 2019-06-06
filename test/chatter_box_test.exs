@@ -29,10 +29,8 @@ defmodule ChatterBoxTest do
     assert Bot.say(:trump, "WHY DID THAT HAPPEN") == "Ex-cuuuuse me... You know what... You're Fired."
   end
 
-  test "testing the quiet function in professor" do
+  test "testing the say function in professor" do
     assert Bot.say(:professor, "hi professor") == "Speak up!"
-  end
-  test "Testing default professor" do
     assert Bot.say(:professor, "Hello") == "What was that?"
   end
 
